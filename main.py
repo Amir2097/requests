@@ -31,7 +31,6 @@ class YaUploader:
         }
 
     def _upload_link(self, file_path):
-        """Метод загружает файлы по списку file_list на яндекс диск"""
         upload_url = 'https://cloud-api.yandex.net/v1/disk/resources/upload'
         headers = self.get_headers()
         params = {"path": file_path, "overwrite": "true"}
